@@ -13,7 +13,7 @@ export class AppComponent {
 
   ngOnInit(): void {
 
-    this.http.get('https://3000-vincenzagen-tecnologie5-fldd6pv67np.ws-eu106.gitpod.io/api').subscribe(data => {
+    this.http.get('https://3000-vincenzagen-tecnologie5-5tpuinf0b69.ws-eu106.gitpod.io/api').subscribe(data => {
    
     this.results= data['results'];
 

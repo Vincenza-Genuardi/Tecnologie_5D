@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Cane } from '../models/Animale.model';
+import { Animale } from '../models/Animale.model';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,9 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./cane.component.css']
 })
 export class CaneComponent {
-    cani:Cane[]
+    cani:Animale[]
     constructor(private router:Router) {
-      this.cani = this.router.getCurrentNavigation().extras.state as Cane[];
+      this.cani = this.router.getCurrentNavigation().extras.state as Animale[];
       
     }
 }

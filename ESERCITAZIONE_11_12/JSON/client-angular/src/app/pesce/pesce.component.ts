@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Pesce } from '../models/Animale.model';
+import { Animale } from '../models/Animale.model';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-pesce',
@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./pesce.component.css']
 })
 export class PesceComponent {
-  pesci:Pesce[]
+  pesci:Animale[]
   constructor(private router:Router) {
-    this.pesci = this.router.getCurrentNavigation().extras.state as Pesce[];
+    this.pesci = this.router.getCurrentNavigation().extras.state as Animale[];
   }
 }

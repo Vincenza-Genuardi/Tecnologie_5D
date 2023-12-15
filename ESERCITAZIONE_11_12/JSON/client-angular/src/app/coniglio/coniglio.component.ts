@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Coniglio } from '../models/Animale.model';
+import { Animale } from '../models/Animale.model';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-coniglio',
@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./coniglio.component.css']
 })
 export class ConiglioComponent {
-  conigli:Coniglio[]
+  conigli:Animale[]
   constructor(private router:Router) {
-    this.conigli = this.router.getCurrentNavigation().extras.state as Coniglio[];
+    this.conigli = this.router.getCurrentNavigation().extras.state as Animale[];
   }
 }

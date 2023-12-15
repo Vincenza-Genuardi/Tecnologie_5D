@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Animale, Cane, Coniglio, Gatto, Pesce } from './models/Animale.model';
+import { Animale} from './models/Animale.model';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -9,13 +9,12 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  animali: Animale;
-  oAnimale: Observable<Animale>;
+  
   AnimaliUrl = 'https://3000-vincenzagen-tecnologie5-zicsdom0plo.ws-eu107.gitpod.io/api'; //URL for fetching data
-  cani : Cane[];
-  gatti : Gatto[]
-  conigli : Coniglio[];
-  pesci : Pesce[];
+  cani : Animale[];
+  gatti : Animale[]
+  conigli : Animale[];
+  pesci : Animale[];
 
   constructor(private http: HttpClient) {}
 

@@ -1,0 +1,22 @@
+<h1>I nostri pesci:</h1>
+<div class="card-group">
+  <div *ngFor="let p of pesci" class="card">
+    <img src="{{ p.immagine }}" class="card-img-top" alt="{{ p.nome }}">
+    <div class="card-body">
+      <h5>NOME DELLA RAZZA:</h5>
+      <p>{{ p.nome }}</p>
+      <h5>DESCRIZIONE:</h5>
+      <p>{{ p.descrizione }}</p>
+      <h5>ANNI DI VITA MEDI:</h5>
+      <p>{{ p.anni_vita }}</p>
+      <h5>AMICHELVOLE CON I BAMBINI?</h5>
+      <p>{{ p.amichevole_con_bambini }}</p>
+      <h5>DIMENSIONI MEDIE DA ADULTO:</h5>
+      <p>{{ p.dimensioni_medie }}</p>
+      <h5>COSTO DI MANTENIMENTO MENSILE:</h5>
+      <p>{{ p.costo_mantenimento_mensile }}</p>
+      <h5>PREZZO DI VENDITA:</h5>
+      <p>{{ p.costo_acquisto }}</p>
+    </div>
+  </div>
+</div>

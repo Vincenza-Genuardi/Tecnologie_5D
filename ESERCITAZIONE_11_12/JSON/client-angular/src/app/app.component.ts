@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   
-  AnimaliUrl = 'https://3000-vincenzagen-tecnologie5-zicsdom0plo.ws-eu107.gitpod.io/api'; //URL for fetching data
+  AnimaliUrl = 'https://3000-vincenzagen-tecnologie5-1z59jstplkv.ws-eu107.gitpod.io/api'; //URL for fetching data
   cani : Animale[];
   gatti : Animale[]
   conigli : Animale[];

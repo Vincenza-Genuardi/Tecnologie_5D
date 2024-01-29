@@ -32,4 +32,39 @@ export class SpotifyService {
     let obsTracks = this.http.get(url, { headers });
     return obsTracks;
   }
+
+  searchGenre(query: string) {
+    const url = `https://api.spotify.com/v1/search?q=${query}&type=genre`;
+
+    const headers = new HttpHeaders({
+      Authorization: 'Bearer ' + this.token
+    });
+
+    let obsTracks = this.http.get(url, { headers });
+    return obsTracks;
+  }
+
+  searchAlbum(query: string) {
+    const url = `https://api.spotify.com/v1/search?q=${query}&type=album`;
+
+    const headers = new HttpHeaders({
+      Authorization: 'Bearer ' + this.token
+    });
+
+    let obsTracks = this.http.get(url, { headers });
+    return obsTracks;
+  }
+
+
+  searchArtist(query: string) {
+    const url = `https://api.spotify.com/v1/search?q=${query}&type=artist`;
+
+    const headers = new HttpHeaders({
+      Authorization: 'Bearer ' + this.token
+    });
+
+    let obsTracks = this.http.get(url, { headers });
+    return obsTracks;
+  }
+
 } 

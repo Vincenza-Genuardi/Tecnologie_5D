@@ -7,7 +7,7 @@
 
 <div *ngIf="results">
   <div *ngIf="!results.albums || results.albums.items.length ==0">
-    No tracks were found with the term '{{ ricerca }}'
+    No album were found with the term '{{ ricerca }}'
   </div>
 
   <div *ngIf="results.albums &&  results.albums.items.length > 0">

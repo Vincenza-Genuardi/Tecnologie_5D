@@ -12,6 +12,7 @@ export class TrackSearchResultComponentComponent {
   obsTrack : Observable<Object>;
   ricerca : string;
   results : any;
+  tipo: string = "track";
   constructor(public spotify : SpotifyService){
  
   } 
@@ -22,7 +23,7 @@ export class TrackSearchResultComponentComponent {
       return;
     }
     this.ricerca = ricerca.value;
-    this.obsTrack = this.spotify.searchTrack(this.ricerca);
+    this.obsTrack = this.spotify.search(this.ricerca, this.tipo);
     this.obsTrack.subscribe((data) => this.results = data); 
   }
 }

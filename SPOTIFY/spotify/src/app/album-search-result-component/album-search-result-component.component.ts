@@ -12,6 +12,7 @@ export class AlbumSearchResultComponentComponent {
   obsAlbulm : Observable<Object>;
   ricerca : string;
   results : any;
+  tipo:string="album"
   constructor(public spotify : SpotifyService){
  
   } 
@@ -22,7 +23,7 @@ export class AlbumSearchResultComponentComponent {
       return;
     }
     this.ricerca = ricerca.value;
-    this.obsAlbulm = this.spotify.searchAlbum(this.ricerca);
+    this.obsAlbulm = this.spotify.search(this.ricerca, this.tipo);
     this.obsAlbulm.subscribe((data) => this.results = data); 
   }
 }

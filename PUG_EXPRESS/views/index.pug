@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel='stylesheet', href='/css/style.css')
+    title ALLEVAMENTO ANIMALI GIOIOSI
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z", crossorigin="anonymous")
+
+  body
+
+    header.header
+      h1 ALLEVAMENTO ANIMALI GIOIOSI - #{title}
+    .container
+      div.mt-3
+        h2 Informazioni sull'allevamento
+        p
+          | L'allevamento "ANIMALI GIOIOSI" è un allevamento di animali domestici situato nelle dolci colline della Lombardia. Siamo specializzati nella vendita di cani, gatti, pesci e conigli.
+        h3 La nostra storia
+        p
+          | La nostra storia inizia nel 2000, quando la nostra famiglia ha deciso di realizzare il nostro sogno di aprire un allevamento di animali domestici. Dopo aver studiato a fondo le caratteristiche di questi animali, hanno acquistato un terreno nelle colline lombarde e hanno iniziato a costruire il loro allevamento.
+        p
+          | Oggi, il nostro allevamento conta oltre 100 animali domestici, di diverse razze e varietà. Tutti i nostri animali vengono visitati regolarmente e tutti sono compresi di pedigree.
+        h3 La nostra filosofia
+        p
+          | Crediamo che gli animali domestici siano parte della famiglia, e che nessuna di esse sia completa senza di loro. Per questo motivo, ci impegniamo a fornire ai nostri animali un ambiente confortevole e sicuro.
+        h3 I nostri animali
+        h3 Scegli la categoria che fa al caso tuo!!
+        .row
+          .col-sm-3
+            a(href='/cani')
+              img.figure-img.img-fluid.rounded(src='immagini/CANI_GEN.jpg', alt="Un'immagine di un cane generico")
+            p 
+             | Cani
+          .col-sm-3
+            a(href='/gatti')
+              img.figure-img.img-fluid.rounded(src='immagini/GATTI_GEN.jpg', alt="Un'immagine di un gatto generico")
+            p
+              | Gatti
+          .col-sm-3
+            a(href='/conigli')
+              img.figure-img.img-fluid.rounded(src='immagini/CONIGLIO_GEN.jpg', alt="Un'immagine di un coniglio generico")
+            p
+              | Conigli
+          .col-sm-3
+            a(href='/pesci')
+              img.figure-img.img-fluid.rounded(src='immagini/PESCE_GEN.jpg', alt="Un'immagine di un pesce generico")
+            p
+              | Pesci
+        p
+          b I nostri animali sono disponibili per l'acquisto.
+      div.mt-3
+        h3 Venite a trovarci
+        p
+          | Se siete interessati a conoscere i nostri animali, vi invitiamo a visitarci. Saremo lieti di mostrarvi i nostri cuccioli, e di aiuravi a trovare un nuovo membro per la vostra famiglia.
+        h3 Contattateci
+        p Per ulteriori informazioni, non esitate a contattarci.
+        p Email: allevamentoanimaligioiosi@gmail.com
+        p Telefono: +39 030 456 7890
+    

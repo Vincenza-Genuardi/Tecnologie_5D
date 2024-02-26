@@ -1,0 +1,160 @@
+{"Cani": [
+        {
+          "nome": "Labrador",
+          "descrizione": "I Labrador sono cani amichevoli, intelligenti e adatti alla famiglia.",
+          "anni_vita": 10,
+          "amichevole_con_bambini": true,
+          "dimensioni_medie": "Medie",
+          "costo_mantenimento_mensile": 100,
+          "costo_acquisto": 800,
+          "immagine": "LABRADOR.jpg",
+          "id": 1
+    
+        },
+        {
+          "nome": "Pastore Tedesco",
+          "descrizione": "I Pastori Tedeschi sono coraggiosi, protettivi e facili da addestrare.",
+          "anni_vita": 11,
+          "amichevole_con_bambini": true,
+          "dimensioni_medie": "Medie",
+          "costo_mantenimento_mensile": 110,
+          "costo_acquisto": 900,
+          "immagine": "PASTORE_TEDESCO.jpg",
+          "id": 2
+        },
+        {
+          "nome": "Barboncino",
+          "descrizione": "I Barboncini sono vivaci, allegri e hanno una pelliccia riccia e ipoallergenica.",
+          "anni_vita": 14,
+          "amichevole_con_bambini": true,
+          "dimensioni_medie": "Piccole",
+          "costo_mantenimento_mensile": 90,
+          "costo_acquisto": 700,
+          "immagine": "BARBONCINO.jpg",
+          "id": 3  
+        },
+        {
+          "nome": "Bulldog Francese",
+          "descrizione": "I Bulldog Francesi sono affettuosi, compatti e adorano stare vicino ai loro proprietari.",
+          "anni_vita": 12,
+          "amichevole_con_bambini": false,
+          "dimensioni_medie": "Piccole",
+          "costo_mantenimento_mensile": 80,
+          "costo_acquisto": 600,
+          "immagine": "BULLDOG_FRANCESE.jpg",
+          "id": 4    
+        }
+      ],
+      "Gatti": [
+        {
+          "nome": "Soriano",
+          "descrizione": "I Gatti Soriano sono amichevoli, affettuosi e si legano facilmente con i loro proprietari.",
+          "anni_vita": 15,
+          "amichevole_con_bambini": true,
+          "dimensioni_medie": "Piccole",
+          "costo_mantenimento_mensile": 50,
+          "costo_acquisto": 500,
+          "immagine": "SIBERIANO.jpg",
+          "id": 1 
+
+
+        },
+        {
+          "nome": "Bengala",
+          "descrizione": "I Gatti Bengala sono giocosi, energici e hanno un mantello maculato simile a quello dei leopardi.",
+          "anni_vita": 14,
+          "amichevole_con_bambini": true,
+          "dimensioni_medie": "Medie",
+          "costo_mantenimento_mensile": 60,
+          "costo_acquisto": 550,
+          "immagine": "BENGALA.jpg",
+          "id": 2  
+
+        },
+        {
+          "nome": "Siamese",
+          "descrizione": "I Gatti Siamesi sono vocali, affettuosi e hanno un mantello colorpoint distintivo.",
+          "anni_vita": 16,
+          "amichevole_con_bambini": true,
+          "dimensioni_medie": "Piccole",
+          "costo_mantenimento_mensile": 45,
+          "costo_acquisto": 400,
+          "immagine": "SIAMESE.jpg",
+          "id": 3  
+        }
+      ],
+      "Conigli": [
+        {
+          "nome": "Coniglio Nano",
+          "descrizione": "I Conigli Nani sono adorabili, sociali e amano saltare e giocare.",
+          "anni_vita": 8,
+          "amichevole_con_bambini": true,
+          "dimensioni_medie": "Piccole",
+          "costo_mantenimento_mensile": 30,
+          "costo_acquisto": 50,
+          "immagine": "CONIGLIO_NANO.jpg",
+          "id": 1  
+        },
+        {
+          "nome": "Coniglio Olandese",
+          "descrizione": "I Conigli Olandesi sono dolci, docili e hanno un mantello bianco con macchie colorate.",
+          "anni_vita": 9,
+          "amichevole_con_bambini": true,
+          "dimensioni_medie": "Piccole",
+          "costo_mantenimento_mensile": 25,
+          "costo_acquisto": 40,
+          "immagine": "CONIGLIO_OLANDESE.jpg",
+          "id": 2    
+        },
+        {
+          "nome": "Coniglio Testa di Leone",
+          "descrizione": "I Conigli Testa di Leone hanno una criniera di pelo intorno alla testa e sono amichevoli.",
+          "anni_vita": 7,
+          "amichevole_con_bambini": true,
+          "dimensioni_medie": "Piccole",
+          "costo_mantenimento_mensile": 35,
+          "costo_acquisto": 60,
+          "immagine": "CONIGLIO_TESTA_DI_LEONE.jpg",
+          "id": 3   
+        }
+      ],
+      "Pesci": [
+        {
+          "nome": "Pesce Rosso",
+          "descrizione": "I Pesci Rossi sono colorati, socievoli e adatti agli acquari domestici.",
+          "anni_vita": 10,
+          "amichevole_con_bambini": "dipende dal trattamento",
+          "dimensioni_medie": "Piccole",
+          "costo_mantenimento_mensile": 10,
+          "costo_acquisto": 5,
+          "immagine": "PESCE_ROSSO.jpg",
+          "id": 1   
+        },
+        {
+          "nome": "Guppy",
+          "descrizione": "I Guppy sono piccoli e colorati, adatti per i principianti negli acquari.",
+          "anni_vita": 2,
+          "amichevole_con_bambini": "dipende dal trattamento",
+          "dimensioni_medie": "Piccole",
+          "costo_mantenimento_mensile": 8,
+          "costo_acquisto": 3,
+          "immagine": "GUPPY.jpg",
+          "id": 2   
+        },
+        {
+          "nome": "Betta Splendens",
+          "descrizione": "I Betta Splendens sono noti per i loro colori sgargianti e le pinne lunghe.",
+          "anni_vita": 4,
+          "amichevole_con_bambini": "dipende dal trattamento",
+          "dimensioni_medie": "Piccole",
+          "costo_mantenimento_mensile": 12,
+          "costo_acquisto": 7,
+          "immagine": "BETTA.jpg",
+          "id": 3 
+        }
+        
+      ]
+    }
+    
+    
+  

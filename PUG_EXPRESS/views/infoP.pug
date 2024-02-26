@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    style.
+      .info-image {
+        flex: 0 0 50%;
+        background: url('/immagini/#{pesce.immagine}') no-repeat;
+        background-size: cover;
+        height: 500px; 
+        width: 600px;
+      }
+  body
+    header.header
+      h1= title
+    div.info-container
+      div.info-image
+      div.info-details
+        h1 #{pesce.nome}
+        h2 #{pesce.descrizione}
+        h5 Anni di vita medi:
+        p #{pesce.anni_vita}
+        h5 Amichevole con i bambini?
+        p
+          | #{pesce.amichevole_con_bambini ? 'Si' : 'No'}
+        h5 Dimensioni medie da adulto:
+        p #{pesce.dimensioni_medie}
+        h5 Costo di mantenimento mensile:
+        p €#{pesce.costo_mantenimento_mensile}
+        h5 Prezzo di vendita:
+        p €#{pesce.costo_acquisto}

@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    style.
+      .info-image {
+        flex: 0 0 50%;
+        background: url('/immagini/#{gatto.immagine}') no-repeat;
+        background-size: cover;
+        height: 400px; 
+        width: 400px;
+      }
+  body
+    header.header
+      h1= title
+    div.info-container
+      div.info-image
+      div.info-details
+        h1 #{gatto.nome}
+        h2 #{gatto.descrizione}
+        h5 Anni di vita medi:
+        p #{gatto.anni_vita}
+        h5 Amichevole con i bambini?
+        p
+          if gatto.amichevole_con_bambini
+            | Si
+          else
+            | No
+        h5 Dimensioni medie da adulto:
+        p #{gatto.dimensioni_medie}
+        h5 Costo di mantenimento mensile:
+        p €#{gatto.costo_mantenimento_mensile}
+        h5 Prezzo di vendita:
+        p €#{gatto.costo_acquisto}

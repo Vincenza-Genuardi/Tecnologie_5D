@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    style.
+      .info-image {
+        flex: 0 0 50%;
+        background: url('/immagini/#{coniglio.immagine}') no-repeat;
+        background-size: cover;
+        height: 700px; 
+        width: 900px;
+      }
+  body
+    header.header
+      h1= title
+    .info-container
+      .info-image
+      .info-details
+        h1 #{coniglio.nome}
+        h2 #{coniglio.descrizione}
+        h5 Anni di vita medi:
+        p #{coniglio.anni_vita}
+        h5 Amichevole con i bambini?
+        p
+          if coniglio.amichevole_con_bambini
+            | Si
+          else
+            | No
+        h5 Dimensioni medie da adulto:
+        p #{coniglio.dimensioni_medie}
+        h5 Costo di mantenimento mensile:
+        p €#{coniglio.costo_mantenimento_mensile}
+        h5 Prezzo di vendita:
+        p €#{coniglio.costo_acquisto}

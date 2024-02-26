@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{title}
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+
+  body
+    header.header
+      h1 #{title}
+    .container
+      .card-group
+        each pesce in pesci
+          .card
+            a(href=`/infoP?id=${pesce.id}`)
+              img.card-img-top(src=`immagini/${pesce.immagine}`, alt=pesce.nome)
+            .card-body
+              h5 Nome della razza:
+              p #{pesce.nome}
+            a(href=`/infoP?id=${pesce.id}`) CLICCA PER INFORMAZIONI SPECIFICHE SULLA RAZZA
